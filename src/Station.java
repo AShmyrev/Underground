@@ -17,6 +17,17 @@ public class Station {
         this.metro = metro;
     }
 
+    public Station(String name, Station previousStation, Station nextStation, Duration timeToNextStation,
+                   Line line, ArrayList<Station> changeLines, Metro metro) {
+        this.name = name;
+        this.previousStation = previousStation;
+        this.nextStation = nextStation;
+        this.timeToNextStation = timeToNextStation;
+        this.line = line;
+        this.changeLines = changeLines;
+        this.metro = metro;
+    }
+
     public String getName() {
         return name;
     }
